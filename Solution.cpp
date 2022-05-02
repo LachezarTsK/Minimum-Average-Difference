@@ -7,8 +7,8 @@ class Solution {
     
 public:
     int minimumAverageDifference(const vector<int>& nums) {
-        long totalSum = accumulate(nums.begin(), nums.end(), static_cast<long long> (0));
-        long sumFirstPart = 0;
+        long long totalSum = accumulate(nums.begin(), nums.end(), static_cast<long long> (0));
+        long long sumFirstPart = 0;
         int minAverageDifference = INT_MAX;
         int indexMinAverageDifference = 0;
         const size_t size = nums.size();
